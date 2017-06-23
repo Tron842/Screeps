@@ -1,12 +1,11 @@
 var roleHarvester = require('role.harvester');
 var roleBuilder = require('role.builder');
 var roleUpgrader = require('role.upgrader');
+var autospawn = require('autospawn');
 
 module.exports.loop = function () {
 
-    for(var name in Game.rooms) {
-        //console.log('Room "'+name+'" has '+Game.rooms[name].energyAvailable+' energy');
-    }
+    autospawn.run();
 
     for(var name in Game.creeps) {
         var creep = Game.creeps[name];
@@ -20,4 +19,4 @@ module.exports.loop = function () {
             roleUpgrader.run(creep);
         }
     }
-}
+};
