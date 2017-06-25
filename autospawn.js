@@ -25,7 +25,7 @@ var autospawn = {
             var newName = Game.spawns['Spawn1'].createCreep([WORK,CARRY,MOVE], undefined, {role: 'harvester'});
             console.log('Spawning new harvester: ' + newName);
         }
-        else if(upgraders.length < 1 && energy > 200) {
+        else if(upgraders.length < 2 && energy > 200) {
             var newName = Game.spawns['Spawn1'].createCreep([WORK,CARRY,MOVE], undefined, {role: 'upgrader'});
             console.log('Spawning new upgrader: ' + newName);
         }
