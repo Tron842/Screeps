@@ -8,6 +8,10 @@
 ScreepsAutocomplete
 *.iml
 
+#Grunt
+package-lock.json
+node_modules/**
+
 # Sensitive or high-churn files:
 .idea/**/dataSources/
 .idea/**/dataSources.ids
@@ -50,5 +54,4 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 .idea/vcs.xml
-*.xml
 .idea/.name
