@@ -11,6 +11,7 @@ ScreepsAutocomplete
 #Grunt
 package-lock.json
 node_modules/**
+.screeps.json
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
